@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock-Paper-Scissor</title>
+        <link rel="stylesheet" href="rps.css">
+        <script src="rps.js"></script>
+    </head>
+    <body>
+        <p style="
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 32px;">
+            Rock Paper Scissors
+        </p>
+        <button onclick="click1('rock')">
+            <img src="../images/rock-emoji.png" alt="" class="img-button">
+        </button>
+        <button  onclick="click1('paper')">
+            <img src="../images/paper-emoji.png" alt="" class="img-button">
+        </button>
+        <button onclick="click1('scissors')">
+        <img src="../images/scissors-emoji.png" alt="" class="img-button">
+        </button>
+        <button onclick="
+        score={
+            win:0,
+            loose:0,
+            tie:0   
+        } ;
+        document.querySelector('.re').innerHTML='‎ ';
+        document.querySelector('.result').innerHTML=`win :${score.win} loose${score.loose} tie:${score.tie}` ;
+        
+        ">
+Reset
+        </button>
+
+        <p class="re" style="
+        font-size: 32px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        "></p>
+        <p class="result"></p>
+        <br>
+        <p class="qwerty"></p>
+    </body>
+    </html>
